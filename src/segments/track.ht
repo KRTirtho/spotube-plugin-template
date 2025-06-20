@@ -1,0 +1,23 @@
+import "module:std" as std
+
+var HttpClient = std.HttpClient
+
+class TrackEndpoint {
+  var client: HttpClient
+
+  construct (this.client)
+
+  fun getTrack(id: string) {
+    // TODO: Implement method
+  }
+
+  fun save(trackIds: List) {
+    // TODO: Implement method
+  }
+
+  fun unsave(trackIds: List) {
+    // TODO: Implement method
+  }
+}
+
+export { TrackEndpoint }

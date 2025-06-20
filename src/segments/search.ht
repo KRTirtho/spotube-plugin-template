@@ -1,0 +1,31 @@
+import "module:std" as std
+
+var HttpClient = std.HttpClient
+
+class SearchEndpoint {
+  var client: HttpClient
+
+  construct (this.client)
+
+  fun all(query: string) {
+    // TODO: Implement method
+  }
+
+  fun albums(query: string, {offset: int, limit: int}) {
+    // TODO: Implement method
+  }
+
+  fun artists(query: string, {offset: int, limit: int}) {
+    // TODO: Implement method
+  }
+
+  fun tracks(query: string, {offset: int, limit: int}) {
+    // TODO: Implement method
+  }
+
+  fun playlists(query: string, {offset: int, limit: int}) {
+    // TODO: Implement method
+  }
+}
+
+export { SearchEndpoint }
