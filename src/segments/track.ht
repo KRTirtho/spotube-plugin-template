@@ -18,6 +18,10 @@ class TrackEndpoint {
   fun unsave(trackIds: List) {
     // TODO: Implement method
   }
+
+  fun radio(id: string) {
+    // TODO: Implement method
+  }
 }
 
 export { TrackEndpoint }

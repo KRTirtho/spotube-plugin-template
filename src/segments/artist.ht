@@ -11,6 +11,10 @@ class ArtistEndpoint {
     // TODO: Implement method
   }
 
+  fun related(id: string, {offset: int, limit: int}) {
+    // TODO: Implement method
+  }
+
   fun topTracks(id: string, {limit: int, offset: int}) {
     // TODO: Implement method
   }

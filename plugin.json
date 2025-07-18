@@ -6,5 +6,7 @@
   "description": "A brief description of the plugin's functionality.",
   "entryPoint": "plugin class name",
   "apis": ["webview", "localstorage", "timezone"],
-  "abilities": ["authentication"]
+  "abilities": ["authentication"],
+  "repository": "https://github.com/KRTirtho/spotube-plugin-template",
+  "pluginApiVersion": "1.0.0"
 }

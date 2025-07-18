@@ -1,0 +1,24 @@
+import "module:std" as std
+
+var HttpClient = std.HttpClient
+
+class PluginUpdater {
+  var client: HttpClient
+
+  construct (this.client)
+
+  /// Checks for updates to the plugin.
+  /// [currentConfig] is just plugin.json's file content.
+  ///
+  /// If there's an update available, it will return a map of:
+  /// - [downloadUrl] -> direct download url to the new plugin.smplug file.
+  /// - [version] of the new plugin.
+  /// - [changelog] Optionally, a changelog for the update (markdown supported).
+  ///
+  /// If no update is available, it will return null.
+  fun check(currentConfig: Map) -> Future {
+    // TODO: Check for updates
+  }
+}
+
+export { PluginUpdater }
