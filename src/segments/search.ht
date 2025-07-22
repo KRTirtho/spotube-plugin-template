@@ -7,6 +7,11 @@ class SearchEndpoint {
 
   construct (this.client)
 
+  get chips -> List { // Set<string>
+    // can be tracks, playlists, artists, albums and all
+    return ["all", "tracks", "albums", "artists", "playlists"]
+  }
+
   fun all(query: string) {
     // TODO: Implement method
   }
