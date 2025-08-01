@@ -2,7 +2,7 @@ import "module:std" as std
 
 var HttpClient = std.HttpClient
 
-class PluginUpdater {
+class CorePlugin {
   var client: HttpClient
 
   construct (this.client)
@@ -16,9 +16,9 @@ class PluginUpdater {
   /// - [changelog] Optionally, a changelog for the update (markdown supported).
   ///
   /// If no update is available, it will return null.
-  fun check(currentConfig: Map) -> Future {
+  fun checkUpdate(currentConfig: Map) -> Future {
     // TODO: Check for updates
   }
 }
 
-export { PluginUpdater }
+export { CorePlugin }
