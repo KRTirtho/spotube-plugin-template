@@ -1,12 +1,11 @@
 {
-  "type": "metadata",
   "version": "1.0.0",
   "name": "Alphanumeric plugin name with hyphens or underscore",
   "author": "Your Name",
   "description": "A brief description of the plugin's functionality.",
   "entryPoint": "plugin class name",
   "apis": ["webview", "localstorage", "timezone"],
-  "abilities": ["authentication", "scrobbling"],
+  "abilities": ["authentication", "scrobbling", "metadata", "audio-source"],
   "repository": "https://github.com/KRTirtho/spotube-plugin-template",
-  "pluginApiVersion": "1.0.0"
+  "pluginApiVersion": "2.0.0"
 }

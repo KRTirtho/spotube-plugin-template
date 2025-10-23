@@ -1,5 +1,6 @@
 import "module:std" as std
 
+import { AudioSourceEndpoint } from './segments/audio_source.ht'
 import { AuthEndpoint } from './segments/auth.ht'
 import { AlbumEndpoint } from "./segments/album.ht"
 import { ArtistEndpoint } from "./segments/artist.ht"
@@ -15,6 +16,7 @@ var HttpClient = std.HttpClient
 var HttpBaseOptions = std.HttpBaseOptions
 
 class TemplateMetadataProviderPlugin {
+  var audioSource: AudioSourceEndpoint
   var auth: AuthEndpoint
   var album: AlbumEndpoint
   var artist: ArtistEndpoint
@@ -35,7 +37,7 @@ class TemplateMetadataProviderPlugin {
     )
     
     auth = AuthEndpoint(api)
-
+    audioSource = AudioSourceEndpoint(api)
     album = AlbumEndpoint(api)
     artist = ArtistEndpoint(api)
     browse = BrowseEndpoint(api)
